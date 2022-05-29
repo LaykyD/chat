@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class InMemoryUserServiceImpl implements UserService {
+public class inMemoryUserServiceImpl implements UserService {
 
     private List<User> users;
 
-    public InMemoryUserServiceImpl() {
+    public inMemoryUserServiceImpl() {
         this.users = new ArrayList<>();
     }
 

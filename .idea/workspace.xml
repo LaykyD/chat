@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bc1cc80-78a1-4be1-9604-376a15c686ae" name="Changes" comment="lesson4">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/net/MessageProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/net/NetworkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-common/src/main/java/ru/gb/chat/constants/MessageConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-common/src/main/java/ru/gb/chat/enums/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/error/WrongCredentialsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/service/impl/inMemoryUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="5bc1cc80-78a1-4be1-9604-376a15c686ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-client/src/main/resources/ChatWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/resources/ChatWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/service/impl/inMemoryUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/service/impl/inMemoryUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +22,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="lesson7" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -102,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Launcher" />
       </list>
     </recent_temporary>
   </component>
