@@ -1,5 +1,6 @@
 package ru.gb.chat.server;
 
+import ru.gb.chat.client.ChatController;
 import ru.gb.chat.server.model.User;
 import ru.gb.chat.server.service.UserService;
 
@@ -11,8 +12,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import static ru.gb.chat.constants.MessageConstants.REGEX;
-import static ru.gb.chat.enums.Command.BROADCAST_MESSAGE;
-import static ru.gb.chat.enums.Command.LIST_USERS;
+import static ru.gb.chat.enums.Command.*;
 
 public class Server {
     private static final int PORT = 8189;
@@ -23,7 +23,7 @@ public class Server {
     public Server(UserService userService) {
         this.userService = userService;
         this.handlers = new ArrayList<>();
-    }
+     }
 
     public void start() {
         try (ServerSocket serverSocket = new ServerSocket(PORT)) {
@@ -82,9 +82,18 @@ public class Server {
                 .map(Handler::getUser)
                 .collect(Collectors.joining(REGEX));
         String msg = LIST_USERS.getCommand() + REGEX + contacts;
-
         for (Handler handler : handlers) {
             handler.send(msg);
         }
     }
+
+    public void sendPrivateMessage(String from, String message, String recipient) {
+        String msg = PRIVATE_MESSAGE.getCommand() + REGEX + String.format("[%s]: %s", from, message);
+        for (Handler handler : handlers) {
+            if (handler.getUser().equals(recipient) || handler.getUser().equals(from)) {
+                handler.send(msg);
+            }
+        }
+    }
+
 }
