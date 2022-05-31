@@ -1,7 +1,5 @@
 package ru.gb.chat.server;
 
-import ru.gb.chat.client.ChatController;
-import ru.gb.chat.constants.MessageConstants;
 import ru.gb.chat.enums.Command;
 import ru.gb.chat.server.error.WrongCredentialsException;
 

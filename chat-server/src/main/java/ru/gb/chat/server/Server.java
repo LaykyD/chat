@@ -1,7 +1,5 @@
 package ru.gb.chat.server;
 
-import ru.gb.chat.client.ChatController;
-import ru.gb.chat.server.model.User;
 import ru.gb.chat.server.service.UserService;
 
 import java.io.IOException;

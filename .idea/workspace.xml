@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bc1cc80-78a1-4be1-9604-376a15c686ae" name="Changes" comment="lesson7">
+    <list default="true" id="5bc1cc80-78a1-4be1-9604-376a15c686ae" name="Changes" comment="lesson7 homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-client/src/main/resources/ChatWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/resources/ChatWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/net/NetworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/net/NetworkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-client/target/classes/ChatWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/target/classes/ChatWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Server.java" afterDir="false" />
     </list>
@@ -141,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653836720614</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson7 homework">
+      <created>1654004660765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654004660765</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,7 +166,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="lesson4" />
     <MESSAGE value="lesson7" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7" />
+    <MESSAGE value="lesson7 homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson7 homework" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/chat$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1653917141274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

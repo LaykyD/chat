@@ -1,8 +1,6 @@
 package ru.gb.chat.client;
 
 import javafx.application.Platform;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,7 +24,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
-import java.util.logging.Handler;
 
 import static ru.gb.chat.constants.MessageConstants.REGEX;
 import static ru.gb.chat.enums.Command.*;
@@ -75,8 +72,6 @@ public class ChatController implements Initializable, MessageProcessor {
 
     private String user;
 
-    private String mesDirect;
-
     public void mockAction(ActionEvent actionEvent) {
         System.out.println("mock");
     }
@@ -91,7 +86,6 @@ public class ChatController implements Initializable, MessageProcessor {
             if (text == null || text.isBlank()) {
                 return;
             }
-//            mesDirect = contacts.getSelectionModel().getSelectedItem();
           String recipient = contacts.getSelectionModel().getSelectedItem();
             if (recipient.equals("ALL")) {
                 networkService.sendMessage(BROADCAST_MESSAGE.getCommand() + REGEX + text);
@@ -99,8 +93,6 @@ public class ChatController implements Initializable, MessageProcessor {
             else {
                 networkService.sendMessage(PRIVATE_MESSAGE.getCommand() + REGEX + text + REGEX + recipient);
             }
-
-            //@TODO private msgs
             inputField.clear();
         } catch (IOException e) {
             showError("Network error");
