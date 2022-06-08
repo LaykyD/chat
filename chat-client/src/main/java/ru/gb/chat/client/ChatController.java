@@ -26,8 +26,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import static ru.gb.chat.constants.MessageConstants.REGEX;
-import static ru.gb.chat.enums.Command.AUTH_MESSAGE;
-import static ru.gb.chat.enums.Command.BROADCAST_MESSAGE;
+import static ru.gb.chat.enums.Command.*;
 
 public class ChatController implements Initializable, MessageProcessor {
 
@@ -87,11 +86,13 @@ public class ChatController implements Initializable, MessageProcessor {
             if (text == null || text.isBlank()) {
                 return;
             }
-            String recipient = contacts.getSelectionModel().getSelectedItem();
+          String recipient = contacts.getSelectionModel().getSelectedItem();
             if (recipient.equals("ALL")) {
                 networkService.sendMessage(BROADCAST_MESSAGE.getCommand() + REGEX + text);
             }
-            //@TODO private msgs
+            else {
+                networkService.sendMessage(PRIVATE_MESSAGE.getCommand() + REGEX + text + REGEX + recipient);
+            }
             inputField.clear();
         } catch (IOException e) {
             showError("Network error");
@@ -172,4 +173,5 @@ public class ChatController implements Initializable, MessageProcessor {
             showError("Network error");
         }
     }
+
 }

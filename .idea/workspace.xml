@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bc1cc80-78a1-4be1-9604-376a15c686ae" name="Changes" comment="">
+    <list default="true" id="5bc1cc80-78a1-4be1-9604-376a15c686ae" name="Changes" comment="lesson7 homework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/service/impl/inMemoryUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/service/impl/inMemoryUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/net/NetworkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/src/main/java/ru/gb/chat/client/net/NetworkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-client/target/classes/ChatWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/target/classes/ChatWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/ru/gb/chat/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="29f4uioclrdGj9P221M3IT9YmUx" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gb.chat.server.App" />
       <module name="chat-server" />
@@ -73,7 +79,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.chat.client.Application" />
+      <module name="chat-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.chat.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Launcher" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gb.chat.client.Launcher" />
       <module name="chat-client" />
       <extension name="coverage">
@@ -86,10 +105,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.Launcher" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="Application.Launcher" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653491789412</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lesson7">
+      <created>1653836720614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653836720614</updated>
+    </task>
+    <task id="LOCAL-00003" summary="lesson7 homework">
+      <created>1654004660765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654004660765</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +165,13 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="lesson4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson4" />
+    <MESSAGE value="lesson7" />
+    <MESSAGE value="lesson7 homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson7 homework" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/chat$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1653917141274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ru.gb.chat.client.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,10 +1,8 @@
 package ru.gb.chat.client.net;
 
-import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.Socket;
 
 public class NetworkService {
@@ -32,7 +30,6 @@ public class NetworkService {
             try {
                 while (!socket.isClosed() && !Thread.currentThread().isInterrupted()) {
                     String income = in.readUTF();
-                    System.out.println("Got income message");
                     messageProcessor.processMessage(income);
                 }
             } catch (IOException e) {

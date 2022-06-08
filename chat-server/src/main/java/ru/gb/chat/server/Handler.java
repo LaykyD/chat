@@ -1,6 +1,5 @@
 package ru.gb.chat.server;
 
-import ru.gb.chat.constants.MessageConstants;
 import ru.gb.chat.enums.Command;
 import ru.gb.chat.server.error.WrongCredentialsException;
 
@@ -59,6 +58,7 @@ public class Handler {
 
         switch (command) {
             case BROADCAST_MESSAGE -> server.broadcast(user, split[1]);
+            case PRIVATE_MESSAGE -> server.sendPrivateMessage(user, split[1], split[2]);
             default -> System.out.println("Unknown message " + message);
         }
     }
@@ -117,5 +117,6 @@ public class Handler {
     public String getUser() {
         return user;
     }
+
 }
 
